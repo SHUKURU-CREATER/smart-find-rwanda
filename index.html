@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>SMART FIND RWANDA</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#lost">lost items</a>
+        <a href="#found">found items</a>
+        <a href="#report">report items</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>find what you lost</h1> 
+
+    <p>helping people in rwand find their lost belongings and return found items.</p>
+
+    <a href="#report" class="btn">report an item</a>
+</section>
+
+<section class="features">
+    <div class="card" id="lost">
+        <h2>lost item</h2>
+        <p>search for belongings you have lost.</p>
+    </div>
+
+    <div class="card" id="found">
+        <h2>found items</h2>
+        <p>help someone recover their items.</p>
+    </div>
+</section>
+
+<section class="report" id="report">
+    <h2>report an item</h2>
+
+    <form id="itemform">
+        <input type="text" id="itemName" placeholder="item name" required>
+
+        <section id="itemtype" required>
+            <option value="">choose item type</option>
+            <option value="lost">lost item</option>
+            <option value="found">found item</option>
+        </section>
+
+        <input type="text" id="location"
+        placeholder="where was it lost or found?" required>
+
+        <button type="submit">submit report</button>
+    </form>
+</section>
+
+<footer>
+    <p>@ 2026 smart find rwanda</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
